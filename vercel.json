@@ -1,0 +1,13 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "installCommand": "",
+  "framework": null,
+  "env": [],
+  "regions": ["all"],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
