@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vivanta Wellness Spa - Premium Ayurvedic treatments and restorative therapies in Hinjawadi, Pune">
+    <meta name="keywords" content="spa, wellness, Ayurvedic, massage, therapy, Pune">
+    <title>Vivanta Wellness Spa | Premium Ayurvedic Treatments & Wellness</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                        <circle cx="50" cy="50" r="48" fill="none" stroke="#D4A574" stroke-width="1"/>
+                        <path d="M50 15 Q65 35 65 50 Q65 70 50 85 Q35 70 35 50 Q35 35 50 15" fill="#D4A574"/>
+                        <circle cx="50" cy="50" r="6" fill="#D4A574"/>
+                        <path d="M30 50 Q40 40 50 35" fill="none" stroke="#D4A574" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M70 50 Q60 40 50 35" fill="none" stroke="#D4A574" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="logo-text">
+                        <div class="logo-brand">VIVANTA</div>
+                        <div class="logo-tagline">WELLNESS SPA</div>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#speciality">SPECIALITY</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#gifts">GIFTS</a></li>
+                    <li><a href="#approach">OUR APPROACH</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="#contact" class="reserve-btn">RESERVE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-left">
+                <span class="location-tag">HINJAWADI - PUNE</span>
+                <h1 class="hero-title">The Healing <span class="highlight">Power of Touch.</span></h1>
+                <p class="hero-description">A refined sanctuary for restorative therapies, quiet rituals, and the kind of care that lets the day fall away.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">RESERVE YOUR EXPERIENCE</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">EXPLORE THERAPIES</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1544367567-0d6fcffe7f1f?w=600&h=700&fit=crop" alt="Spa Treatment">
+                </div>
+                <div class="hero-tagline">
+                    <span class="tagline-number">01</span>
+                    <p>ARRIVE AS YOU ARE, <br>LEAVE FEELING RENEWED.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-brand-feeling">
+            <div class="feeling-item">Relax</div>
+            <div class="feeling-divider">•</div>
+            <div class="feeling-item">Rejuvenate</div>
+            <div class="feeling-divider">•</div>
+            <div class="feeling-item">Revive</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2 class="section-title">About Vivanta</h2>
+                    <p class="about-text">Vivanta Wellness Spa is a sanctuary dedicated to holistic healing and rejuvenation. With a philosophy rooted in ancient Ayurvedic traditions and modern wellness practices, we create transformative experiences that restore balance to your mind, body, and spirit.</p>
+                    <p class="about-text">Our expert therapists combine time-honored techniques with personalized care, ensuring every guest leaves feeling renewed and revitalized.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Expert Therapists</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Premium Treatments</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600881333195-b6c3a4e37a8f?w=500&h=600&fit=crop" alt="Spa Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M50 20 Q70 35 70 50 Q70 70 50 80 Q30 70 30 50 Q30 35 50 20" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Ayurvedic Massage</h3>
+                    <p>Traditional oil massages designed to balance your doshas and promote deep healing.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="60" height="60" fill="none" stroke="currentColor" stroke-width="2" rx="5"/>
+                            <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Hair Treatment</h3>
+                    <p>Specialized Ayurvedic hair treatments to nourish, strengthen, and revitalize your hair.</p>
+                    <a href="#speciality" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 20 L70 40 L70 80 Q70 85 65 85 L35 85 Q30 85 30 80 L30 40 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 50 L60 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Body Treatments</h3>
+                    <p>Rejuvenating full-body treatments combining ancient wisdom with modern techniques.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="8" fill="currentColor"/>
+                            <circle cx="70" cy="30" r="8" fill="currentColor"/>
+                            <circle cx="50" cy="70" r="8" fill="currentColor"/>
+                            <path d="M30 30 L50 70" stroke="currentColor" stroke-width="2"/>
+                            <path d="M70 30 L50 70" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Wellness Therapy</h3>
+                    <p>Holistic therapies designed to balance energy and promote overall well-being.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 20 Q80 40 80 70 Q80 85 50 90 Q20 85 20 70 Q20 40 50 20" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="12" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Facial Treatments</h3>
+                    <p>Natural facial treatments that cleanse, nourish, and brighten your skin.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="25" width="70" height="50" fill="none" stroke="currentColor" stroke-width="2" rx="5"/>
+                            <path d="M25 35 L25 65" stroke="currentColor" stroke-width="2"/>
+                            <path d="M50 35 L50 65" stroke="currentColor" stroke-width="2"/>
+                            <path d="M75 35 L75 65" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Personalized wellness consultations to guide your journey towards optimal health.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speciality Section -->
+    <section class="speciality" id="speciality">
+        <div class="container">
+            <h2 class="section-title">Our Speciality</h2>
+            <h3 class="section-subtitle">Vivanta Ayurvedic Hair Treatment</h3>
+            <p class="speciality-intro">Experience the ancient healing power of Ayurvedic hair treatment, a three-step therapeutic journey designed to transform your hair and restore your vitality.</p>
+            
+            <div class="treatment-flow">
+                <div class="treatment-step">
+                    <div class="step-number">01</div>
+                    <div class="step-circle">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#D4A574" stroke-width="2"/>
+                            <path d="M50 30 Q65 45 65 50 Q65 65 50 70 Q35 65 35 50 Q35 45 50 30" fill="#D4A574" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h4>Shiroabhyanga</h4>
+                    <p>A luxurious oil massage of the scalp, neck, and shoulders. Warm herbal oils are gently massaged to stimulate circulation, nourish hair roots, and release tension from the head and neck.</p>
+                    <div class="benefits">
+                        <span class="benefit-tag">Relieves Tension</span>
+                        <span class="benefit-tag">Nourishes Roots</span>
+                        <span class="benefit-tag">Improves Circulation</span>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="treatment-step">
+                    <div class="step-number">02</div>
+                    <div class="step-circle">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="30" width="40" height="40" fill="none" stroke="#D4A574" stroke-width="2" rx="5"/>
+                            <path d="M40 40 L60 60" stroke="#D4A574" stroke-width="2"/>
+                            <path d="M60 40 L40 60" stroke="#D4A574" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h4>Shirolepa</h4>
+                    <p>A therapeutic herbal paste is applied to the scalp and left for 20-30 minutes. This specially formulated blend of Ayurvedic herbs cools, heals, and detoxifies the scalp while conditioning the hair.</p>
+                    <div class="benefits">
+                        <span class="benefit-tag">Deep Cleansing</span>
+                        <span class="benefit-tag">Scalp Healing</span>
+                        <span class="benefit-tag">Hair Conditioning</span>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="treatment-step">
+                    <div class="step-number">03</div>
+                    <div class="step-circle">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 30 L70 30 L70 70 Q70 75 65 75 L35 75 Q30 75 30 70 Z" fill="none" stroke="#D4A574" stroke-width="2"/>
+                            <line x1="40" y1="40" x2="60" y2="40" stroke="#D4A574" stroke-width="2"/>
+                            <line x1="40" y1="55" x2="60" y2="55" stroke="#D4A574" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h4>Banana Leaf Wrap</h4>
+                    <p>The scalp is gently wrapped with fresh banana leaves, creating a cooling and therapeutic environment. This ancient technique locks in the benefits of the herbal paste and provides deep nourishment.</p>
+                    <div class="benefits">
+                        <span class="benefit-tag">Cooling Effect</span>
+                        <span class="benefit-tag">Deep Nourishment</span>
+                        <span class="benefit-tag">Natural Healing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="treatment-benefits">
+                <h4 class="benefits-title">Complete Treatment Benefits</h4>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Strengthens hair roots and prevents hair loss</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Improves scalp health and promotes growth</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Reduces stress and promotes relaxation</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Enhances hair shine and texture</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Balances the doshas for holistic wellness</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✓</div>
+                        <p>Rejuvenates mind, body, and spirit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="treatment-duration">
+                <p><strong>Duration:</strong> 75-90 minutes | <strong>Frequency:</strong> Monthly for optimal results</p>
+            </div>
+
+            <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">BOOK YOUR TREATMENT</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="gallery-intro">Immerse yourself in the serene ambiance of our wellness sanctuary.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599599810694-a5f8fce7f98f?w=400&h=400&fit=crop" alt="Spa Treatment Room">
+                    <div class="gallery-overlay">
+                        <span>Treatment Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1613161776298-c1cdbe3b74fe?w=400&h=400&fit=crop" alt="Relaxation Area">
+                    <div class="gallery-overlay">
+                        <span>Relaxation Area</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544367567-0d6fcffe7f1f?w=400&h=400&fit=crop" alt="Massage Therapy">
+                    <div class="gallery-overlay">
+                        <span>Massage Therapy</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600881333195-b6c3a4e37a8f?w=400&h=400&fit=crop" alt="Spa Ambiance">
+                    <div class="gallery-overlay">
+                        <span>Spa Ambiance</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=400&h=400&fit=crop" alt="Wellness Space">
+                    <div class="gallery-overlay">
+                        <span>Wellness Space</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=400&h=400&fit=crop" alt="Treatment Details">
+                    <div class="gallery-overlay">
+                        <span>Treatment Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section class="gifts" id="gifts">
+        <div class="container">
+            <h2 class="section-title">Gift Packages</h2>
+            <p class="gifts-intro">Share the gift of wellness with your loved ones.</p>
+            <div class="gifts-grid">
+                <div class="gift-card">
+                    <div class="gift-icon">🎁</div>
+                    <h3>Relaxation Escape</h3>
+                    <p class="gift-price">₹4,999</p>
+                    <ul class="gift-items">
+                        <li>60-minute Full Body Massage</li>
+                        <li>30-minute Facial Treatment</li>
+                        <li>Complimentary Tea</li>
+                    </ul>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+                <div class="gift-card">
+                    <div class="gift-icon">✨</div>
+                    <h3>Rejuvenation Ritual</h3>
+                    <p class="gift-price">₹7,999</p>
+                    <ul class="gift-items">
+                        <li>Vivanta Ayurvedic Hair Treatment</li>
+                        <li>45-minute Massage</li>
+                        <li>Herbal Consultation</li>
+                        <li>Aromatherapy Session</li>
+                    </ul>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+                <div class="gift-card featured">
+                    <div class="featured-badge">POPULAR</div>
+                    <div class="gift-icon">👑</div>
+                    <h3>Ultimate Wellness</h3>
+                    <p class="gift-price">₹12,999</p>
+                    <ul class="gift-items">
+                        <li>Vivanta Hair Treatment (2 sessions)</li>
+                        <li>90-minute Signature Massage</li>
+                        <li>Full Facial Treatment</li>
+                        <li>Body Scrub & Polish</li>
+                        <li>Wellness Consultation</li>
+                        <li>Complimentary Spa Products</li>
+                    </ul>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="container">
+            <h2 class="section-title">Our Approach</h2>
+            <div class="approach-content">
+                <div class="approach-text">
+                    <h3>Ayurvedic Philosophy</h3>
+                    <p>At Vivanta, we believe in treating the root cause, not just symptoms. Our approach is grounded in the ancient wisdom of Ayurveda, which recognizes that true wellness comes from balancing the body, mind, and spirit.</p>
+                    <p>Each guest receives a personalized consultation to understand their unique constitution (prakriti) and current imbalances (vikriti). We then tailor our therapies to your specific needs, ensuring maximum efficacy and lasting results.</p>
+                    <div class="approach-principles">
+                        <div class="principle">
+                            <h4>Holistic Healing</h4>
+                            <p>We treat the whole person, not isolated symptoms.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>Natural Remedies</h4>
+                            <p>Only pure, natural, and organic materials are used.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>Expert Guidance</h4>
+                            <p>Our therapists are trained in traditional Ayurvedic practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="approach-image">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&h=600&fit=crop" alt="Ayurvedic Approach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Guest Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Vivanta exceeded all my expectations. The ambiance was so serene, and the therapists were incredibly skilled. I left feeling completely rejuvenated!"</p>
+                    <p class="review-author">- Priya M.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"The Ayurvedic hair treatment was transformative. My scalp feels healthier, and my hair has never looked better. Highly recommended!"</p>
+                    <p class="review-author">- Rajesh K.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"A truly peaceful sanctuary in the heart of Pune. The staff is warm, professional, and genuinely caring. I will definitely be back!"</p>
+                    <p class="review-author">- Anjali D.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"The personalized consultation helped me understand my wellness needs better. The treatments are authentic and effective. Worth every penny!"</p>
+                    <p class="review-author">- Vikram S.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Vivanta is more than a spa—it's a healing sanctuary. Every detail is thoughtfully designed. I felt truly cared for throughout my visit."</p>
+                    <p class="review-author">- Neha P.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"Professional, clean, and deeply therapeutic. The therapists have exceptional skill, and the products are premium quality. Absolutely excellent!"</p>
+                    <p class="review-author">- Arjun T.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Experience</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Reserve Now</h3>
+                    <form id="reservationForm" class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Treatment</option>
+                                <option value="hair-treatment">Vivanta Ayurvedic Hair Treatment</option>
+                                <option value="massage">Ayurvedic Massage</option>
+                                <option value="facial">Facial Treatment</option>
+                                <option value="body-treatment">Full Body Treatment</option>
+                                <option value="wellness">Wellness Therapy</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Any special requests or health concerns?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">CONFIRM RESERVATION</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <h4>Location</h4>
+                        <p>Hinjawadi, Pune 411057<br>Maharashtra, India</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@vivantaspa.com">info@vivantaspa.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Hours</h4>
+                        <p>Monday - Sunday<br>9:00 AM - 9:00 PM<br>Closed on Select Holidays</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">ig</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">tw</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vivanta Wellness Spa</h4>
+                    <p>A sanctuary for holistic healing and rejuvenation through Ayurvedic traditions and wellness practices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#speciality">Speciality</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#approach">Our Approach</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vivanta Wellness Spa. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
